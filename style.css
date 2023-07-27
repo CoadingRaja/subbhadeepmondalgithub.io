@@ -1,157 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+.bg-img-1{
+    background-image: url('https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8dWklMjBkZXNpZ258ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60');
 }
-html,body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 
-    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color:darkslategray;
-    transition:3s ease-in-out;
-    scroll-behavior: smooth;
+.bg-img-2{
+    background-image: url('https://images.unsplash.com/photo-1481487196290-c152efe083f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8d2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60');
 }
-a{
-    text-decoration: none;
+.bg-img-3{
+    background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=1000&q=60');
 }
-.sticky{
-    display:flex;
-   justify-content: space-between;
-   align-items: center;
-   top:0;
-   color:white;
-   background-color: black;
-   padding:20px;
-   position: sticky;
-}
-.navigation ul{
-    display:flex;
-    gap:10px;
-    margin-left: 50px;
-   margin-right: 70px;
-}
-.navigation ul li{
-    list-style: none;
-    padding:2px;
-    color:white;
-    border: none;
-    font-size: 20px;
-    border-radius: 5px;
-}
-.navigation ul li:hover{
-    background-color: white;
-    color:black;
-}
-.sticky h2{
-    font-size: 32px;
-    font-weight: 800;
-    padding-left:20px;
-}
-.sticky i{
-    margin-right:7px;
-}
-.Home{
-    background-image: url(https://images.unsplash.com/photo-1672740400447-22e80d06e2a4?ixlib=rb-4.0.
-        3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDI1fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
-    min-height: 400px;
+.carousel-image{
+    height: 80vh;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    display:flex;
-    color:white;
-    gap:15px;
 }
-.Home h1{
-    font-size:80px;
-    font-weight: 800;
-    margin-right: 50px;
-    margin-top:100px;
+.myimg{
+    height: 10vh;
+    border-radius: 55%;
+    margin-right: 8px;
 }
-.image{
-    border-radius:25px;
-    border:4px solid white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    margin-right: 10px;
+.card-merg{
+    margin-top: 8px;
 }
-.Home h2{
-    font-size: 40px;
-    font-weight: 400;
-    margin-right: 20px;
-}
-.Home h5{
-    font-size: 38px;
-    font-weight: 400;
-    margin-right: 50px;
-}
-.about{
-    display:flex;
-    gap:20px;
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    max-width: 1400px;
-    margin: 50px auto;
-    
-}
-.skl h3{
-    padding:15px;
-    font-size:32px;
-    font-weight: 200;
-    text-align: center;
-}
-.skills{
-    padding:20px;
-    border:1px;
-    transition:0.2s ease-in-out;
-    max-width: 320px;
-}
-.skills:hover{
-    transition:0.2s ease-in-out;
-    box-shadow: 5px 5px 5px darkslategray;
-}
-li{
-    list-style: none;
-}
-#Home h5{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
-    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
-}
-@keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
-  }
-  .contact{
-    font-size: 42px;
-    text-align: center;
+.lastpara{
     background-color: black;
-    color:white;
-    padding:30px;
-    letter-spacing:2.5px;
-  }
-  footer{
-    font-size: 32px;
-    text-align: center;
-    background-color: black;
-    color:white;
-    padding:20px;
-  }
+    display:flex;
+    padding: 30px;
+}

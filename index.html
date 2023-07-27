@@ -1,110 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" class="css">
-    <link rel="icon" href="./icon favicon.png">
-    <script src="https://kit.fontawesome.com/c33969019c.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <!--Navigation-->
-    <div class="sticky">
-        <h2><i class="fa-solid fa-bars"></i>Portfolio</h2>
-        <nav class="navigation">
-            <ul>
-                <a href="#Home"><li>Home</li></a>
-                <a href="#About_me"><li>About Me</li></a>
-                <a href="#My_projects"><li>My Projects</li></a>
-                <a href="#Contacts"><li>Contacts</li></a>
+  </head>
+  <body>
+    <nav  class="navbar bg-dark border-bottom border-bottom-dark   navbar-expand-lg  bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+          <img src="./deep.jpg" class="myimg">
+          <a class="navbar-brand" href="#">Portfolio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contacts
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/subhadeep-mondal-51a813232/">LinkedIn</a></li>
+                  
+                  <li><a class="dropdown-item" href="#">Intagram</a></li>
+                  <li><a class="dropdown-item" href="#">Reddict</a></li>
+                  <li><a class="dropdown-item" href="#">Youtube</a></li>
+                  <li><a class="dropdown-item" href="coadingraja@gmail.com">G-Mail</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://github.com/Deep-mondal">GitHub</a></li>
+                  <li><a class="dropdown-item" href="https://leetcode.com/SUBHADEEP_6666/">LeetCode</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link ">Projects</a>
+              </li>
             </ul>
-        </nav>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          
+          <div class="carousel-item  carousel-image bg-img-1 active">
+            <!--<img src="https://images.unsplash.com/photo-1533133303533-682ef118cdce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHBpeGVsc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="...">-->
+            <div class="carousel-caption d-none d-md-block">
+              
+              <h5>WEB DEVELOPER</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image bg-img-2">
+            <!--<img src="https://images.unsplash.com/photo-1686661589184-b9ced5f4be1c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDE4fE04alZiTGJUUndzfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=700&q=60" class="d-block w-100" alt="...">-->
+            <div class="carousel-caption d-none d-md-block">
+            
+              <h5>PROGRAMMER</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item carousel-image bg-img-3">
+            <!--<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=700&q=60" class="d-block w-100" alt="...">-->
+            <div class="carousel-caption d-none d-md-block">
+              
+              <h5>TECH ENTHUSIEST</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <!--Home Section-->
-    <section id=Home class="Home">
-        <img src="./deep.jpg" alt="Photo" class="image" width="320px">
-        <div>
-        <h1>Namastey!</h1>
-        <h2>I am Subhadeep, </h2>
-        <h5 class="type">A full stack developer,programmer and a softwere Engineer.</h5>
+    <div class="conatiner1 my-2">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./calculator.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">Calculator</h5>
+                <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>-->
+               
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./Developer landing.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">Developer Landing</h5>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./Digital clock.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">Digital Clock</h5>
+                
+                
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-     <!--About Section-->
-    <section id=About_me class="skl">
-        <h3>Skills</h3>
-        <div class="about">
-        <div class="skills">
-            <img src="./c.png" alt="c">
-            <h2>C</h2>
-            <p>Programming Language</p>
+        <div class="row">
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./Documentation.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">Documentation</h5>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./login form.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">Login Form</h5>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./parallax website.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">Parallax Website</h5>
+                
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skills">
-            <img src="./pyhon.jpg" alt="">
-            <h2>Python</h2>
-            <p>Programming Language</p>
+        <div class="row">
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./tempareture converter.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">Tempareture Converter</h5>
+                                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./to do.png" class="card-img-top" alt="..." title="Click to get Git hub source code">
+              <div class="card-body">
+                <h5 class="card-title">To Do App</h5>
+                                
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card card-merg" style="width: 18rem;">
+              <img src="./tribute page.png" class="card-img-top" alt="..." title="Click to get Git source code">
+              <div class="card-body">
+                <h5 class="card-title">Tribute Page</h5>
+                
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="skills">
-            <img src="./html.png" alt="">
-            <h2>HTML</h2>
-            <p>Hyper Text Mark Up Language</p>
-        </div>
-        <div class="skills">
-            <img src="./css.png" alt="">
-            <h2>CSS</h2>
-            <p>Cascade Style Sheet</p>
-        </div>
+      </div>
     </div>
-    <div class="about">
-        <div class="skills">
-            <img src="./js.png" alt="">
-            <h2>Java Script</h2>
-            <p>Scripting Language</p>
+    <footer class="lastpara">
+      <div class="first">
+        <div class="form-floating">
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Comments</label>
         </div>
-        <div class="skills">
-            <img src="./r.jpg" alt="">
-            <h2>R</h2>
-            <p>Programming Language</p>
-        </div>
-        
-        <div class="skills">
-            <img src="ds.png" alt="">
-            <h2>Data Structure</h2>
+      </div>
+      <div class="second">
+        <h1>Thank you</h1>
 
-        </div>
-        <div class="skills">
-            <img src="./download.jpg" alt="" width="130px">
-            <h2>Web Development</h2>
-            <p>Full-Stack</p>
-        </div>
-    </div>
-    <div class="about">
-        <div class="skills">
-            <img src="cpp.png" alt="">
-            <h2>C++</h2>
-            <p>Programming Language</p>
-        </div>
-        </div>
-    </section>
-    <!--Project Section-->
-    <!--Contact Section-->
-    <section id="Contacts" class="contact">
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/subhadeep-mondal-51a813232/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Deep-mondal"><i class="fa-brands fa-square-github"></i></a>
-        <a href=""><i class="fa-brands fa-square-reddit"></i></a>
-        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
-        <a href=""><i class="fa-brands fa-telegram"></i></a>
-       <h6>for mailing me <a href="mailto:codingraja@gmail.com">Click Here</a></h6>
-    </section>
-    <hr>
-    <footer>
-        <h3>Thank You!For your valuable time,visit again</h3>
+      </div>
     </footer>
-    
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
 </html>
